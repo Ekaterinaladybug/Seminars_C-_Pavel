@@ -55,7 +55,7 @@ while(current <= n)
     current += 1;
 }
 */
-
+/*
 5 / 2 = 2 
 5 % 2 = 1
 
@@ -73,10 +73,31 @@ while(current <= n)
 45346 -> 53
 45346 / 100 = 453
 453 % 100 = 53
-
 /*
 //--------------------------------------------------
 
+// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+/*
+a = 5; b = 7 -> max = 7
+a = 2 b = 10 -> max = 10
+a = -9 b = -3 -> max = -3
+*/
+
+Console.Write("Input integer first number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input integer second number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+if(num1 > num2)
+{
+    Console.WriteLine($"First number {num1} is greater than second number {num2}");
+    Console.WriteLine($"Second number {num2} is less than first number {num1}");
+}
+else
+{
+    Console.WriteLine($"Second number {num2} is greate than first number {num1}");
+    Console.WriteLine($"First number {num1} is less second number {num2}");
+}    
 
 
 
