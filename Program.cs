@@ -173,7 +173,7 @@ else
 5 -> 2, 4
 8 -> 2, 4, 6, 8
 */
-
+/*
 Console.Write("Input a number: ");
 int n = Convert.ToInt32(Console.ReadLine ());
 int num2 = 2;
@@ -191,6 +191,23 @@ while(current <= n)
         current += 1;
     } 
 }
+*/
+// ------------------------------------------
+
+Console.Write("Input first number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input second number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input third number: ");
+int num3 = Convert.ToInt32(Console.ReadLine());
+
+int max = 0;
+
+if(max<num1) max = num1;
+if(max<num2) max = num2;
+if(max<num3) max = num3;
+
+Console.WriteLine($"Max number {max}");
 
 
 
