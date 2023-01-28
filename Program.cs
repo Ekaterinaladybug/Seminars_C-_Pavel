@@ -151,7 +151,7 @@ else
 -3 -> нет
 7 -> нет
 */
-
+/*
 Console.Write("Input integer number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 int num2 = 2;
@@ -165,6 +165,33 @@ else
 {
     Console.Write($"Number {num1} is odd");
 }
+*/
+// ------------------------------------------------------
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+/*
+5 -> 2, 4
+8 -> 2, 4, 6, 8
+*/
+
+Console.Write("Input a number: ");
+int n = Convert.ToInt32(Console.ReadLine ());
+int num2 = 2;
+int current = 1;
+
+while(current <= n)
+{
+    if(current % num2 == 0)
+    {
+        Console.Write(current + " ");
+        current += 1;
+    }
+    else
+    {
+        current += 1;
+    } 
+}
+
 
 
 
