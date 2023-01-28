@@ -82,7 +82,7 @@ a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
-
+/*
 Console.Write("Input integer first number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input integer second number: ");
@@ -98,6 +98,51 @@ else
     Console.WriteLine($"Second number {num2} is greate than first number {num1}");
     Console.WriteLine($"First number {num1} is less second number {num2}");
 }    
+
+*/
+
+// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+/*
+2, 3, 7 -> 7
+44 5 78 -> 78
+22 3 9 -> 22
+*/
+
+Console.Write("Input integer first number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input integer second number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input integer third number: ");
+int num3 = Convert.ToInt32(Console.ReadLine());
+
+int max = num1;
+
+if(max < num2)
+{
+    if(num2 > num3)
+    {
+        max = num2;
+        Console.Write($"Max number {max}");
+    }
+    else
+    {
+        max = num3;
+        Console.Write($"Max number {max}");
+    }
+     
+}
+else
+{
+    if(max < num3)
+    {
+        max = num3;
+        Console.Write($"Max number {max}");
+    }
+    else
+        max = num1;
+        Console.Write($"Max number {max}");
+}
+
 
 
 
